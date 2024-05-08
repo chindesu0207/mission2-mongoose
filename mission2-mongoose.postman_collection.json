@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "6e0f5cd5-e13e-458f-9d87-a1fe6f7fe7d4",
+		"name": "mission2-mongoose",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34304010"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mission2-mongoose.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"mission2-mongoose",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\":\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, perspiciatis!\",\n    \"name\":\"Tatsu\",\n    \"likes\":30,\n    \"comment\":45\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mission2-mongoose.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"mission2-mongoose",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://mission2-mongoose.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"mission2-mongoose",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://mission2-mongoose.onrender.com/posts/663b25e3d3d7825bdfb75403",
+					"protocol": "https",
+					"host": [
+						"mission2-mongoose",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"663b25e3d3d7825bdfb75403"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\":\"update\",\n    // \"name\":\"new name\",\n    \"tags\":[\"心情\",\"旅遊\"]\n    // \"likes\":123,\n    // \"comment\":456\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mission2-mongoose.onrender.com/posts/663b25f0d3d7825bdfb75406",
+					"protocol": "https",
+					"host": [
+						"mission2-mongoose",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"663b25f0d3d7825bdfb75406"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
