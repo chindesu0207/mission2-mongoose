@@ -66,10 +66,10 @@ const posts = {
         );
         handleSuccess(res, updatePost);
       } else {
-        errorHandle(res);
+        handleError(res);
       }
     } catch {
-      errorHandle(res);
+      handleError(res);
     }
   },
 };
